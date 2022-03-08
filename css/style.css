@@ -1,0 +1,223 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Paytone One', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 1320px;
+}
+
+.background-wrapper {
+  width: 1550px;
+  margin: 0 auto;
+  height: 800px;
+  background-image: url("../img/head-background.png");
+  background-position: top 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-nav {
+  padding-top: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav .logo-link {
+  display: inline-block;
+}
+
+.header-nav .logo-img {
+  display: block;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.header-nav .logo-img:active {
+  -webkit-transform: scale(0.96);
+          transform: scale(0.96);
+}
+
+.header-nav .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav .nav-item {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.header-nav .nav-list:nth-child(1n) {
+  margin-left: 70px;
+}
+
+.header-nav .nav-item ~ .nav-item {
+  margin-left: 35px;
+}
+
+.header-nav .nav-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.header-nav .nav-item:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.header-nav .nav-link {
+  font-size: 18px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+.site-hero {
+  margin: 0 auto;
+  padding: 0 65px;
+  padding-top: 75px;
+  padding-bottom: 15px;
+  margin-top: 100px;
+  width: 995px;
+  color: white;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 42, 39, 0.3)), color-stop(90%, #2d2828ee));
+  background: linear-gradient(180deg, rgba(50, 42, 39, 0.3) 0%, #2d2828ee 90%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: -15px 0px 15px rgba(0, 0, 0, 0.3);
+          box-shadow: -15px 0px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.site-hero .hero-title {
+  font-size: 64px;
+}
+
+.site-hero .hero-subtitle {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+.site-hero .hero-text {
+  margin: 15px 0;
+  width: 60%;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.site-hero .hero-form {
+  margin-bottom: 105px;
+}
+
+.site-hero .hero-email {
+  padding: 10px 30px;
+  width: 290px;
+  background-color: transparent;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  color: #ffffff7e;
+}
+
+.site-hero .hero-btn {
+  margin-left: 20px;
+  padding: 10px 21px;
+  background-color: transparent;
+  border: 2px solid #FF1640;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50px;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.site-hero .hero-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.site-hero .hero-btn:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.site-hero .site-hero__hr {
+  position: absolute;
+  left: 0;
+  top: 500px;
+  width: 993px;
+  opacity: .4;
+}
+
+.site-hero .hero-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.site-hero .hero-item {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.site-hero .hero-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.site-hero .hero-item:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.site-hero .hero-link {
+  display: inline-block;
+}
+
+.site-hero .hero-img {
+  display: block;
+}
