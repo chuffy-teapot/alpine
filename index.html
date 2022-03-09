@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcuticon" href="./img/favicon.png">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
   <title>ALPINE</title>
   <!-- <link rel="stylesheet" href="./css/style.min.css"> ------------------------ -->
   <link rel="stylesheet" href="./css/style.css">
@@ -57,8 +57,10 @@
           orchestring the experiences across channels and applications, including operational managment and measurement,
           with the ultimate goal of driving customer engagement.</p>
 
-        <form class="site-hero__hero-form hero-form" action="https://echo.htmlacademy.ru/" target="_blank">
-          <input class="hero-form__hero-email hero-email" type="email" placeholder="Enter your email !" required>
+        <form class="site-hero__hero-form hero-form" action="https://echo.htmlacademy.ru/" method="post"
+          target="_blank">
+          <input class="hero-form__hero-email hero-email" type="email" name="email" placeholder="Enter your email !"
+            required>
           <button class="hero-form__hero-btn hero-btn" type="submit">Request acces</button>
         </form>
 
@@ -110,6 +112,234 @@
   </div>
   <!----------------------------- background-wrapper ------------------------------------>
 
+
+  <main>
+    <section id="marketing-section">
+      <div class="marketing__container container">
+        <div class="marketing">
+          <div class="marketing__marketing-img marketing-img-block">
+            <img src="./img/main-1.png" width="293" height="237" class="marketing-img__marketing-img marketing-img-1"
+              alt="marketing">
+            <img src="./img/main-2.png" width="293" height="237" class="marketing-img__marketing-img marketing-img-2"
+              alt="marketing">
+            <img src="./img/main-3.png" width="293" height="237" class="marketing-img__marketing-img marketing-img-3"
+              alt="marketing">
+          </div><!-- marketing-img-block -->
+
+          <div class="marketing__marketing-load marketing-load">
+            <h2 class="marketing-load__load-subtitle load-subtitle">MARKETING</h2>
+            <span class="marketing-load__load-line load-line">----------------</span>
+            <img class="marketing-load__load-msg load-msg" width="22" height="21" src="./img/msg.png" alt="message">
+            <a class="marketing-load__load-btn load-btn" href="#">
+              <img class="load-btn__btn-img btn-img" width="12" height="12" src="./img/thread.png" alt="button">
+              Start a thread
+            </a>
+          </div><!-- marketing-load -->
+
+
+
+        </div><!-- marketing -->
+      </div><!-- container -->
+    </section>
+    <!---------------------------------------- marketing-section --------------------------------------------->
+
+    <section class="notificaton-section">
+      <div class="notificaton__container container">
+        <div class="notificaton">
+
+          <ul class="notificaton__notificaton-list notificaton-list">
+            <li class="notificaton__notificaton-item notificaton-item">
+              <p class="notificaton__notification-title notification-title item-title">Unread Notifications</p>
+              <a href="#" class="notificaton__notification-btn notification-btn">
+                <img src="./img/btn-not.png" class="notification-btn__notification-btn_img notification-btn_img">
+                <p class="notification-btn__notification-btn_text notification-btn_text">Dismiss all</p>
+              </a>
+
+              <div class="notificaton__notification-box notification-box">
+                <img src="./img/rosario.png" width="60" height="60" alt="rosario">
+                <p class="notificaton__notification-name notification-name">
+                  <span class="notificaton__name-title name-title">Rosario</span>
+                  <span class="notificaton__name-subtitle name-subtitle">just now</span>
+                </p>
+
+                <div class="notificaton__notification-inner notification-inner">
+                  <h3 class="notificaton__box-inner-title box-inner-title">Showcasing Customers</h3>
+                  <p class="notificaton__box-inner-subtitle box-inner-subtitle">Our customers have continued to send
+                    in pictures of their finished artwork...</p>
+                </div>
+              </div><!-- notification-box -->
+            </li>
+
+            <li class="notificaton__notificaton-item notificaton-item">
+              <p class="notificaton__notification-title notification-title">Recent</p>
+              <a href="#" class="notificaton__item-btn item-btn">Unread
+                <input class="item-btn__item-input item-input" type="checkbox" id="checkbtn">
+                <label class="item-btn__item-label item-label" for="checkbtn">
+                  <div class="item-btn__label-slider label-slider"></div>
+                  <div class="item-btn__label-slider-btn label-slider-btn"></div>
+                </label>
+              </a>
+
+              <div class="notificaton__notification-box notification-box">
+                <img src="./img/dan.png" width="60" height="60" alt="dan">
+                <p class="notificaton__notification-name notification-name">
+                  <span class="notificaton__name-title name-title">Dan</span>
+                  <span class="notificaton__name-subtitle name-subtitle">2 hrs ago</p>
+                </p>
+
+                <div class="notificaton__notification-inner notification-inner">
+                  <h3 class="notificaton__box-inner-title box-inner-title">Thoughts on attendin...</h3>
+                  <p class="notificaton__box-inner-subtitle box-inner-subtitle">Our customers have continued to send
+                    in pictures of their finished artwork...</p>
+                </div>
+              </div><!-- notification-box -->
+            </li>
+          </ul><!-- notificaton-list -->
+
+          <div class="notificaton__notificaton-info notificaton-info">
+            <div class="notificaton__info-wrapper info-wrapper">
+              <h2 class="notificaton__info-title info-title">Start a thread</h2>
+              <p class="notificaton__info-text info-text">Technology trends have the potential to drive significant
+                disruption and deliver significant opportunity. Digital trends such as autonomous things, blockchain,
+                digital twins and smart spaces are rapidly approaching maturity.
+              </p>
+            </div>
+
+            <div class="notificaton__info-wrapper info-wrapper">
+              <h2 class="notificaton__info-title info-title">Mark the decision</h2>
+              <p class="notificaton__info-text info-text">This continuous technology innovation will enable the
+                alignment of the physical and digital worlds and create competitive advantage for some. Are you ready?
+              </p>
+            </div>
+          </div><!-- notificaton-info -->
+        </div><!-- notificaton -->
+      </div><!-- container -->
+    </section>
+    <!--------------------------------------- notificaton-section ---------------------------------------->
+
+    <section class="brands-section">
+      <div class="brand__container container">
+        <div class="brands">
+          <div class="brands__brands-img-block brands-img-block">
+            <img src="./img/glossier.png" width="161" height="61" alt="glossier" class="brand-img">
+            <img src="./img/aspire.png" width="153" height="58" alt="aspire" class="brand-img">
+            <img src="./img/nylas.png" width="156" height="53" alt="nylas" class="brand-img">
+            <img src="./img/bitwise.png" width="176" height="63" alt="bitwise" class="brand-img">
+          </div><!-- brand-img-block -->
+
+          <ul class="brands__brands-list brands-list">
+            <li class="brands-list__brands-item brands-item">
+              <div class="brands-list__brands-info brands-info">
+                <img src="./img/symmet.png" width="89" height="92" alt="symmetric">
+                <img class="brands-list__brands-info-img brands-info-img" src="./img/symmetric.png" width="142"
+                  height="33" alt="symmetric">
+              </div>
+              <p class="brands-list__brands-text brands-text">
+                The AMA's definitions of marketing and marketing research
+                are reviewed and reapproved/modified every
+                three-years by a panel of five scholars who are active researchers.
+              </p>
+            </li>
+            <li class="brands-list__brands-item brands-item">
+              <div class="brands-list__brands-info brands-info">
+                <img src="./img/digit.png" width="90" height="92" alt="digit">
+                <img class="brands-list__brands-info-img brands-info-img" src="./img/digital.png" width="110"
+                  height="51" alt="digital">
+              </div>
+              <p class="brands-list__brands-text brands-text">
+                Marketing is the activity, set of institutions, and
+                processes for creating, communicating, delivering, and exchanging offerings that have value for
+                customers, clients, partners, and society at large.
+              </p>
+            </li>
+            <li class="brands-list__brands-item brands-item">
+              <div class="brands-list__brands-info brands-info">
+                <img src="./img/env.png" width="89" height="92" alt="envie">
+                <img class="brands-list__brands-info-img brands-info-img" src="./img/envie.png" width="105" height="51"
+                  alt="envie">
+              </div>
+              <p class="brands-list__brands-text brands-text">
+                A brand is a name, term, design, symbol or any other feature that identifies one seller's good or
+                service as distinct from those of other sellers.
+              </p>
+            </li>
+          </ul>
+        </div><!-- brands -->
+      </div><!-- container -->
+    </section>
+    <!---------------------------- brands-section ---------------------------------------------->
+  </main>
+
+  <footer>
+    <div class="footer__container container">
+      <div class="footer">
+        <a href="index.html">
+          <p class="footer__footer-title footer-title">ALPINE</p>
+        </a>
+
+        <ul class="footer__footer-list footer-list">
+          <li class="footer__footer-item footer-item">
+            <ul class="footer__footer-info footer-info">
+              <li class="footer__footer-info-item footer-info-item">
+                <a class="footer__footer-link footer-link" href="#">EXPLORE</a>
+              </li>
+              <li class="footer__footer-info-item footer-info-item">
+                <a class="footer__footer-link footer-link" href="#">Pricing</a>
+              </li>
+              <li class="footer__footer-info-item footer-info-item">
+                <a class="footer__footer-link footer-link" href="#">Mobile</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer__footer-item footer-item">
+            <ul class="footer__footer-info footer-info">
+              <li class="footer__footer-info-item footer-info-item">
+                <a class="footer__footer-link footer-link" href="#">RECOURCES</a>
+              </li>
+              <li class="footer__footer-info-item footer-info-item">
+                <a class="footer__footer-link footer-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="footer__footer-item footer-item">
+            <ul class="footer__footer-info footer-info">
+              <li class="footer__footer-info-item footer-info-item">
+                <a class="footer__footer-link footer-link" href="#">Company</a>
+              </li>
+              <li class="footer__footer-info-item footer-info-item">
+                <a class="footer__footer-link footer-link" href="#">About us</a>
+              </li>
+              <li class="footer__footer-info-item footer-info-item">
+                <a class="footer__footer-link footer-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </li>
+        </ul><!-- footer-list -->
+
+        <div class="footer__footer-group footer-group">
+          <ul class="footer__footer-group-list footer-group-list">
+            <li class="footer__footer-group-item footer-group-item" >
+              <a class="footer__footer-group-link footer-group-link" href="#">
+                <img src="./img/vkontakte.png" width="35" height="20" alt="vkontakte"></a>
+            </li>
+            <li class="footer__footer-group-item footer-group-item" >
+              <a class="footer__footer-group-link footer-group-link" href="#">
+                <img src="./img/twitter.png" width="27" height="21" alt="twitter"></a>
+            </li>
+            <li class="footer__footer-group-item footer-group-item" >
+              <a class="footer__footer-group-link footer-group-link" href="#">
+                <img src="./img/facebook.png" width="13" height="22" alt="facebook"></a>
+            </li>
+          </ul>
+
+          <p>Terms & Privacy</p>
+          <p> © 2019 Threads Group inc.</p>
+        </div>
+      </div>
+    </div><!-- container -->
+  </footer>
 </body>
 
 </html>
