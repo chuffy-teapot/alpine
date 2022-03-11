@@ -26,9 +26,7 @@ a {
 }
 
 .background-wrapper {
-  width: 1550px;
   margin: 0 auto;
-  height: 800px;
   background-image: url("../img/head-background.png");
   background-position: top 0;
   background-repeat: no-repeat;
@@ -224,7 +222,6 @@ a {
 }
 
 main {
-  width: 1550px;
   margin: 0 auto;
   background-image: url("../img/main-bg.png");
   background-size: cover;
@@ -597,7 +594,6 @@ main {
 }
 
 footer {
-  width: 1550px;
   margin: 0 auto;
   background-image: url("../img/footer-bg.png");
   background-position: top 0 left 0;
