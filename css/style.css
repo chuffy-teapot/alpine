@@ -22,13 +22,16 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 20px;
-  width: 1320px;
+  max-width: 1320px;
 }
 
 header {
   width: 100%;
-  height: 823px;
   margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+.wrapper {
   background-image: url("../img/head-background.png");
   background-position: top 0;
   background-repeat: no-repeat;
@@ -115,7 +118,7 @@ main {
   padding: 0 65px;
   padding-top: 100px;
   padding-bottom: 15px;
-  width: 995px;
+  max-width: 995px;
   color: white;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 42, 39, 0.3)), color-stop(90%, #2d2828ee));
   background: linear-gradient(180deg, rgba(50, 42, 39, 0.3) 0%, #2d2828ee 90%);
@@ -125,9 +128,7 @@ main {
           box-sizing: border-box;
   -webkit-box-shadow: -15px 0px 15px rgba(0, 0, 0, 0.3);
           box-shadow: -15px 0px 15px rgba(0, 0, 0, 0.3);
-  position: absolute;
-  top: -612px;
-  left: 162.5px;
+  position: relative;
 }
 
 .hero-title {
@@ -147,7 +148,8 @@ main {
 }
 
 .hero-form {
-  margin-bottom: 105px;
+  padding-bottom: 105px;
+  position: relative;
 }
 
 .hero-email {
@@ -189,8 +191,8 @@ main {
 .site-hero__hr {
   position: absolute;
   left: 0;
-  top: 500px;
-  width: 993px;
+  bottom: 10px;
+  width: 100%;
   opacity: .4;
 }
 
@@ -239,7 +241,7 @@ main {
   margin: 0 auto;
   padding: 0 65px;
   padding-top: 130px;
-  width: 995px;
+  max-width: 995px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,19 +264,16 @@ main {
 
 .marketing-img-block {
   margin-bottom: 60px;
-  width: 900px;
+  max-width: 900px;
   height: 240px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+.marketing-img__marketing-img ~ .marketing-img__marketing-img {
+  margin-left: 5px;
 }
 
 .marketing-img-1 {
@@ -292,13 +291,11 @@ main {
 }
 
 .marketing-img__marketing-img:hover {
-  margin-top: -50px;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
 }
 
 .marketing-img-3 {
-  right: 0;
-  top: 0;
-  z-index: 1;
   -webkit-box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.25);
           box-shadow: -10px 15px 10px rgba(0, 0, 0, 0.25);
   -webkit-transition: all 1s ease;
@@ -355,7 +352,7 @@ main {
 .notificaton {
   margin: 0 auto;
   padding: 60px;
-  width: 995px;
+  max-width: 995px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -556,7 +553,7 @@ main {
 
 .brands {
   padding-bottom: 100px;
-  width: 845px;
+  max-width: 845px;
   margin: 0 auto;
 }
 
@@ -863,5 +860,55 @@ footer {
   100% {
     -webkit-transform: rotateZ(0deg);
             transform: rotateZ(0deg);
+  }
+}
+
+@media (max-width: 1050px) {
+  .marketing {
+    padding-top: 50px;
+  }
+  .marketing-img-block {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .marketing-img__marketing-img {
+    max-width: 32%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .marketing-img__marketing-img ~ .marketing-img__marketing-img {
+    margin-left: 0;
+  }
+  .marketing-load {
+    margin-top: 30px;
+  }
+  .notification-box {
+    margin-top: 0;
+  }
+  .notificaton-list {
+    width: 55%;
+  }
+  .notificaton-info {
+    width: 40%;
+  }
+  .item-title {
+    margin-bottom: 20px;
+  }
+  .notificaton-item ~ .notificaton-item {
+    margin-top: 50px;
+  }
+  .box-2 {
+    margin-top: 25px;
   }
 }
